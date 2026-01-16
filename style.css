@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #5d4a4e;
+    background-color: #fff0f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Navigatie */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffd1dc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px !important;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffb6c1;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d87093;
+}
+
+/* Afbeeldingen Algemeen */
+img {
+    display: block;
+    background-color: #ffd1dc; /* Kleur die zichtbaar is zolang er geen foto is */
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Intro Sectie */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.intro h1 { font-size: 40px; color: #ffb6c1; }
+.intro-foto { width: 300px; height: 300px; }
+
+/* Over Mij */
+.over-mij-sectie { background-color: #ffeef2; }
+.over-mij-foto { width: 300px; height: 350px; }
+
+.flex-rij {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.over-mij-tekst h2 {
+    font-size: 32px;
+    color: #d87093;
+    margin-bottom: 20px;
+}
+
+.over-mij-tekst p {
+    margin-bottom: 15px;
+}
+
+/* Projecten */
+.project-kaart {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.project-kaart.omgedraaid {
+    flex-direction: row-reverse;
+}
+
+.project-foto {
+    flex: 1;
+    height: 250px;
+}
+
+.project-inhoud {
+    flex: 1;
+}
+
+.project-inhoud h3 {
+    color: #d87093;
+    margin-bottom: 10px;
+}
+
+.tekst-lijn {
+    height: 8px;
+    background-color: #ffe4e1;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Behind the Scenes Raster */
+.achter-schermen-sectie { background-color: #ffd1dc; }
+
+.raster-3 {
+    display: flex;
+    gap: 20px;
+}
+
+.kaartje {
+    background-color: #ffffff;
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #ffe4e1;
+    transition: 0.3s;
+}
+
+.kaartje:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(216, 112, 147, 0.1);
+}
+
+.titel-klein {
+    color: #ffb6c1;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+}
+
+.voet-foto { width: 250px; height: 250px; }
+
+.sociale-media { display: flex; gap: 10px; margin-top: 20px; }
+
+.bolletje {
+    width: 20px;
+    height: 20px;
+    background-color: #ffb6c1;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bolletje:hover {
+    background-color: #d87093;
+    transform: scale(1.2);
+}
