@@ -111,7 +111,8 @@ img:hover {
 
 .project-foto {
     flex: 1;
-    height: 250px;
+    height: 700px;
+   border-radius: 50px;
 }
 
 .project-inhoud {
